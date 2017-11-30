@@ -14,7 +14,8 @@ public class Initialization {
 		Evolution evo = new Evolution(test);
 		Individual result = evo.run();
 		result.print();
-		
+		JessTest jesstest = new JessTest();
+		jesstest.run();
 	}
 	
 }
