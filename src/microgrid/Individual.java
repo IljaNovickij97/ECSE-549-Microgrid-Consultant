@@ -1,3 +1,4 @@
+package microgrid;
 /* This class describes the individual design of a Microgrid in the evolution algorithm
  * 
  */
@@ -7,28 +8,18 @@ public class Individual {
 	private int ID;
 	private float parameters[];
 	private float sigmas[];
+	private Load load;
+	private ESS ess;
+	private SolarModule solar;
+	private DieselGenerator diesel;
 	
 	
 	// Constructor
-	public Individual(int ID, float parameters[], float sigmas[]) {
-		setID(ID);
-		setParameters(parameters);
-		setSigmas(sigmas);
+	public Individual() {
 		
 	}
 	
-	// Simple test cost function method
-	public float cost() {
-		float cost = 0;
-		
-		for (int i=0; i<parameters.length; i++) {
-			cost += parameters[i];
-		}
-		
-		
-		return cost;
-	}
-	
+
 	
 	// Printing method
 	public void print() {
@@ -62,7 +53,6 @@ public class Individual {
 		
 	}
 
-
 	public float[] getSigmas() {
 		return sigmas;
 	}
@@ -78,6 +68,54 @@ public class Individual {
 	
 	public void setID(int ID) {
 		this.ID = ID;
+	}
+
+
+
+	public Load getLoad() {
+		return load;
+	}
+
+
+
+	public void setLoad(Load load) {
+		this.load = load;
+	}
+
+
+
+	public SolarModule getSolar() {
+		return solar;
+	}
+
+
+
+	public void setSolar(SolarModule solar) {
+		this.solar = solar;
+	}
+
+
+
+	public ESS getEss() {
+		return ess;
+	}
+
+
+
+	public void setEss(ESS ess) {
+		this.ess = ess;
+	}
+
+
+
+	public DieselGenerator getDiesel() {
+		return diesel;
+	}
+
+
+
+	public void setDiesel(DieselGenerator diesel) {
+		this.diesel = diesel;
 	}
 
 

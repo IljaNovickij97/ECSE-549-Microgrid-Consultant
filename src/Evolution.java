@@ -4,6 +4,8 @@
 
 import java.util.Random;
 
+import microgrid.Individual;
+
 public class Evolution {
 	
 	
@@ -15,11 +17,10 @@ public class Evolution {
 		System.out.println("Starting Evolution!");
 		this.initial = initial;
 		
-		System.out.println("Initial cost is: " + initial.cost());
 		
 		
 	}
-	
+	/*
 	// Run the algorithm
 	public Individual run() {
 		
@@ -27,7 +28,6 @@ public class Evolution {
 		
 		Individual current = initial;
 		Individual next = initial;
-		float cost = current.cost();
 		int n = current.getParameters().length;
 		float[] delta = new float[n];
 		float[] sigmas = current.getSigmas();
@@ -54,5 +54,6 @@ public class Evolution {
 		}
 		return current;
 	}
+	*/
 	
 }
