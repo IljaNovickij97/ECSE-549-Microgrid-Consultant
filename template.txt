@@ -1,0 +1,51 @@
+//Design Info
+Name:
+First Design
+Interest Rate:
+0.03
+//Requirements
+Min RE:
+0.5
+MaxCO2:
+500.0
+MaxLCOE:
+0.0015
+Fuel Cost:
+1.0
+//Load: Average Daily Load in a year
+2000
+2000
+2000
+2000
+2000
+7000
+7000
+7000
+7000
+7000
+7000
+7000
+7000
+7000
+7000
+7000
+7000
+4000
+4000
+4000
+4000
+4000
+4000
+4000
+// Diesel Size (KVA)
+10
+// Solar Size (KWp)
+12
+// ESS Size (KAh)
+10
+// ESS Nominal Voltage (V)
+2
+// ESS DOD
+0.3
+
+

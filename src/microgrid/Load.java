@@ -2,27 +2,54 @@ package microgrid;
 
 public class Load {
 	// Fields
-	private float[] average_load_curve;
-	private float yearly_consumption;
+	private double[] load_curve = new double[24];
+	private double total_energy = 0;
+	private double daytime_load = 0;
+	private double average_load;
 	
-	public Load(float[] average_load_curve, float yearly_consumption) {
-		setAverage_load_curve(average_load_curve);
-		setYearly_consumption(yearly_consumption);
+	public Load(double[] load_curve) {
+		setLoad_curve(load_curve);
+		for (int i=0; i < 24; i++) {
+			total_energy += load_curve[i];
+		}
+		total_energy /= 1000;
+		average_load = total_energy/24;		
+		for (int i=8; i < 13; i++) {
+			daytime_load += load_curve[i];
+		}
 	}
 	
 	// Setters and Getters
 	
-	public float[] getAverage_load_curve() {
-		return average_load_curve;
+	public double[] getLoad_curve() {
+		return load_curve;
 	}
-	public void setAverage_load_curve(float[] average_load_curve) {
-		this.average_load_curve = average_load_curve;
+	public void setLoad_curve(double[] load_curve) {
+		this.load_curve = load_curve;
 	}
-	public float getYearly_consumption() {
-		return yearly_consumption;
+
+	public double getDaytime_load() {
+		return daytime_load;
 	}
-	public void setYearly_consumption(float yearly_consumption) {
-		this.yearly_consumption = yearly_consumption;
+
+	public void setDaytime_load(double daytime_load) {
+		this.daytime_load = daytime_load;
+	}
+
+	public double getTotal_energy() {
+		return total_energy;
+	}
+
+	public void setTotal_energy(double total_energy) {
+		this.total_energy = total_energy;
+	}
+
+	public double getAverage_load() {
+		return average_load;
+	}
+
+	public void setAverage_load(double average_load) {
+		this.average_load = average_load;
 	}
 	
 	

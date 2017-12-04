@@ -3,39 +3,21 @@ package microgrid;
 public class DieselGenerator {
 	//Fields
 	
-	private float rating;
-	private float[] consumption;
-	private float co2;
+	private double rating;
 	
-	public DieselGenerator(float rating, float[] consumption) {
+	public DieselGenerator(double rating) {
 		setRating(rating);
-		setConsumption(consumption);
 	}
 
 	// Getters and setters
 	
-	public float getRating() {
+	public double getRating() {
 		return rating;
 	}
 
-	public void setRating(float rating) {
+	public void setRating(double rating) {
 		this.rating = rating;
 	}
 
-	public float[] getConsumption() {
-		return consumption;
-	}
-
-	public void setConsumption(float[] consumption) {
-		this.consumption = consumption;
-	}
-
-	public float getCo2() {
-		return co2;
-	}
-
-	public void setCo2(float co2) {
-		this.co2 = co2;
-	}
 	
 }
