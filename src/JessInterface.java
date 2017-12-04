@@ -18,7 +18,12 @@ public class JessInterface {
 			r.reset();
 			Context c = r.getGlobalContext();
 			
-			// (Firing (MoreRE TRUE)(LessCO2 TRUE)(LessLCOE TRUE)(DONE FALSE))
+		    //(LoadMatching (Generation 10)(Load 12)(NotMatched FALSE))
+			Fact load_matching = new Fact("LoadMatching", r);
+			load_matching.setSlotValue("Generation", new Value( (float) initial.getTotal_generated(), RU.FLOAT));
+			load_matching.setSlotValue("Load", new Value( (float) initial.getLoad().getTotal_energy(), RU.FLOAT));
+			load_matching.setSlotValue("NotMatched", new Value(false));
+			r.assertFact(load_matching);
 			
 			Fact firing = new Fact("Firing", r);
 			firing.setSlotValue("MoreRE", new Value(true));

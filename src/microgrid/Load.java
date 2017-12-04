@@ -12,7 +12,6 @@ public class Load {
 		for (int i=0; i < 24; i++) {
 			total_energy += load_curve[i];
 		}
-		total_energy /= 1000;
 		average_load = total_energy/24;		
 		for (int i=8; i < 13; i++) {
 			daytime_load += load_curve[i];

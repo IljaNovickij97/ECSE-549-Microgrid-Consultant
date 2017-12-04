@@ -5,42 +5,42 @@ Interest Rate:
 0.03
 //Requirements
 Min RE:
-0.5
+0.2
 MaxCO2:
 500.0
 MaxLCOE:
 0.0015
 Fuel Cost:
 1.2
-//Load: Average Daily Load in a year
-5000
-5000
-5000
-5000
-5000
-3000
-2000
-2000
-2000
-2000
-2000
-2000
-2000
-2000
-2000
-2000
-9000
-9000
-9000
-9000
-9000
-9000
-9000
-9000
+//Load: Average Daily Load in a year (kW)
+5
+5
+5
+5
+5
+3
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+9
+9
+9
+9
+9
+9
+9
+9
 // Diesel Size (KVA)
-12
+2
 // Solar Size (KWp)
-12
+2
 // ESS Size (KAh)
 10
 // ESS Nominal Voltage (V)
