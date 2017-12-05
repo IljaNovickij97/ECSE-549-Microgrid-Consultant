@@ -1,0 +1,51 @@
+//Design Info
+Name:
+High Fuel Price/High RE example
+Interest Rate:
+0.05
+//Requirements
+Min RE:
+0.3
+MaxCO2:
+100.0
+MaxLCOE:
+0.3
+Fuel Cost:
+1.2
+//Load: Average Daily Load in a year
+2
+2
+2
+2
+2
+6
+6
+6
+6
+7
+7
+7
+7
+7
+7
+7
+7
+4
+4
+4
+4
+4
+4
+4
+// Diesel Size (KVA)
+14
+// Solar Size (KWp)
+8
+// ESS Size (KAh)
+6
+// ESS Nominal Voltage (V)
+2
+// ESS DOD
+0.3
+
+

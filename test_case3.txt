@@ -1,0 +1,51 @@
+//Design Info
+Name:
+Low Fuel Price/ Low RE/ Low LCOE
+Interest Rate:
+0.03
+//Requirements
+Min RE:
+0.5
+MaxCO2:
+50.0
+MaxLCOE:
+0.23
+Fuel Cost:
+0.8
+//Load: Average Daily Load in a year
+5
+5
+4
+3
+4
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+4
+4
+3
+3
+3
+3
+4
+// Diesel Size (KVA)
+10
+// Solar Size (KWp)
+5
+// ESS Size (KAh)
+2
+// ESS Nominal Voltage (V)
+2
+// ESS DOD
+0.3
+
+
